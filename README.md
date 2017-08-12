@@ -5,7 +5,7 @@ Product::set('name', 'First product');
 print_r(Product::get('name'));
 ========================================
 
- ======= USING OF OBJECT POOL ==========
+======= USING OF OBJECT POOL ==========
 
 Factory::pushProduct(new Product(100));
 Factory::pushProduct(new Product(200));
