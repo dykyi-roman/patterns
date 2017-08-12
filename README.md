@@ -8,8 +8,8 @@ $var = Product::get('name');
 Factory::pushProduct(new Product(100));
 Factory::pushProduct(new Product(200));
 
-$var_1 = Factory::getProduct(100)->getId();
-$var_2 = Factory::getProduct(200)->getId();
+// Factory::getProduct(100)->getId(); = 100
+// Factory::getProduct(200)->getId(); = 200
 ```
 ### ======= SINGLETON ==========
 ```
