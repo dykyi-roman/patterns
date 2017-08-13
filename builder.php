@@ -50,11 +50,11 @@ abstract class BuilderProduct
 }
 
 /**
- * Class BuilderProductA
+ * Class ProductA
  *
  * @property Product $_product
  */
-class BuilderProductA extends BuilderProduct
+class ProductA extends BuilderProduct
 {
     public function buildName()
     {
@@ -68,11 +68,11 @@ class BuilderProductA extends BuilderProduct
 }
 
 /**
- * Class BuilderProductB
+ * Class ProductB
  *
  * @property Product $_product
  */
-class BuilderProductB extends BuilderProduct
+class ProductB extends BuilderProduct
 {
     public function buildName()
     {
@@ -86,11 +86,11 @@ class BuilderProductB extends BuilderProduct
 }
 
 /**
- * Class Chooser
+ * Class Builder
  *
  * @property BuilderProduct $_builder
  */
-class Chooser
+class Builder
 {
 
     private $_builder;
