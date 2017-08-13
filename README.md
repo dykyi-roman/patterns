@@ -38,3 +38,13 @@ $factory = new Factory();
 $product = $factory->create('A');
 $product->write(['data']); // call method from class A
 ```
+### ======= BUILDER ==========
+```
+$company = new Chooser();
+$builderA = new BuilderProductA();
+$builderB = new BuilderProductB();
+
+$comany->setBuilderProduct($builderA);
+$comany->constructProduct();
+$real = $comany->getProduct();
+```
