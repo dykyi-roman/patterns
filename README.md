@@ -40,11 +40,11 @@ $product->write(['data']); // call method from class A
 ```
 ### ======= BUILDER ==========
 ```
-$company = new Chooser();
-$builderA = new BuilderProductA();
-$builderB = new BuilderProductB();
+$builder = new Builder();
+$productA = new ProductA();
+$productB = new ProductB();
 
-$comany->setBuilderProduct($builderA);
-$comany->constructProduct();
-$real = $comany->getProduct();
+$builder->setBuilderProduct($productA);
+$builder->constructProduct();
+$real = $builder->getProduct();
 ```
