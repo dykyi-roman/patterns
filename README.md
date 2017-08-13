@@ -22,7 +22,7 @@ $product_2->data = 200;
 // $product_1->data = 200
 // $product_2->data = 200
 ```
-### ======= Factory ==========
+### ======= ABSTRACT FACTORY ==========
 ```
 $factory = new Factory();
 $product = $factory->create('A');
