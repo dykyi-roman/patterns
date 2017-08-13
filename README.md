@@ -48,3 +48,8 @@ $builder->setBuilderProduct($productA);
 $builder->constructProduct();
 $real = $builder->getProduct();
 ```
+### ======= LAZY LOADING WITH CLOSURES ==========
+```
+$product = $productRepository->find($id);
+$orders = $product->getOrders();
+```
