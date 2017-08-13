@@ -22,6 +22,16 @@ $product_2->data = 200;
 // $product_1->data = 200
 // $product_2->data = 200
 ```
+### ======= FACTORY ==========
+```
+$factory = new FactoryA();
+$product = $factory->getProduct();
+print_r($product->getName()); // The product B
+
+$factory = new FactoryB();
+$product = $factory->getProduct();
+print_r($product->getName()); // The product B
+```
 ### ======= ABSTRACT FACTORY ==========
 ```
 $factory = new Factory();
