@@ -58,3 +58,8 @@ echo $product->getProductName(); // mazda 3
 $product = $productRepository->find($id);
 $orders = $product->getOrders();
 ```
+### ======= LAZY LOADING  ==========
+```
+$Prototype = new ProductA();
+$NewProduct = new ProductA($Prototype);
+```
