@@ -58,8 +58,23 @@ echo $product->getProductName(); // mazda 3
 $product = $productRepository->find($id);
 $orders = $product->getOrders();
 ```
-### ======= LAZY LOADING  ==========
+### ======= PROTOTYPE ==========
 ```
 $Prototype = new ProductA();
 $NewProduct = new ProductA($Prototype);
+```
+### ======= COMMAND ==========
+```
+// or use factory pattern
+$product  = new Product();
+$registry = new CommandRegistry();
+$registry->add(new DeliveryCommand());
+$registry->add(new PackageCommand());
+$registry->get($argv[1])->execute();
+
+// or use registry pattern
+
+$product  = new Product();
+$factory = new ProductCommandFactory();
+$factory->factory($argv[1], $product)->execute();
 ```
