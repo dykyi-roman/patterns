@@ -26,10 +26,10 @@ class LazyProduct
      *
      * @return mixed     
      */
-    public function getProduct()
+    public function getSize()
     {
         if(is_null($this->_product)) {
-            $this->_product = // upload from DB big product data
+            $this->_product = // upload from DB product data
         }
         return $this->_product;
     }
