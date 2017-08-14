@@ -80,3 +80,8 @@ $product  = new Product();
 $factory = new ProductCommandFactory();
 $factory->factory($argv[1], $product)->execute();
 ```
+### ======= FACADE ==========
+```
+$products = new FacadeProduct();
+$products->delivery(100, 45); 
+```
