@@ -7,31 +7,43 @@ class LazyProduct
 {
     protected $_product = null;
     protected $_fullName;
-    protected $_name;
-    protected $_version;    
+    protected $_id;    
 
     /**
      * @param $name
      * @param $version
      */
-    public function __construct($name, $version)
+    public function __construct($id)
     {
-        $this->_name = $name;
-        $this->_version = $version;
+        $this->_id = $id;        
     }
-    
     
     /**
      * Object initialization affter call
      *
      * @return mixed     
      */
-    public function getSize()
+    public function getProduct()
     {
         if(is_null($this->_product)) {
-            $this->_product = // upload from DB product data
+            $this->_product = // upload from DB product data $this->_id
         }
         return $this->_product;
+    }
+       
+    public function getSize()
+    {        
+        return $this->getProduct()->size();
+    }
+    
+    public function getName()
+    {        
+        return $this->getProduct()->name();
+    }
+    
+    public function getSname()
+    {        
+        return $this->getProduct()->sname();
     }
 
     /**          
@@ -42,7 +54,7 @@ class LazyProduct
     public function getProductFullName()
     {
         if(empty($this->_fullName)) {
-            $this->_fullName = $this->_name . ' ' . $this->_version;
+            $this->_fullName = $this->getName() . ' ' . $this->getSname();
         }
         return $this->_fullName;
     }
