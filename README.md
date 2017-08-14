@@ -51,7 +51,9 @@ $real = $builder->getProduct();
 ### ======= LAZY LOADING ==========
 ```
 $product = new LazyProduct('mazda', '3');
-echo $product->getProductName(); // mazda 3 
+echo $product->getProductFullName(); // mazda 3
+// OR
+echo $product->getSize(); // data from DB init on the call moment
 ```
 ### ======= LAZY LOADING WITH CLOSURES ==========
 ```
