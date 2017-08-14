@@ -65,22 +65,25 @@ class FacadeProduct
      * @param $amount
      */
     public function delivery($id, $amount)
-    {
-        $product = new Product($id);
-        $order   = new Order();
+    {        
         $Log     = new Log();
+        $Log->logTransaction('Start delivery');
+        try{
+            $order   = new Order();
+            $order->create();
+            $Log->logTransaction('Order create');
 
-        $order->create();
-        $product->find($id);
-        $Log->logTransaction('Order create');
+            $product = new Product($id);
+            $product->getColor();
+            $product->getCount();
+            $product->getType();
+            $order->makeSmeta($product);
+            $Log->logTransaction('Order make smeta');
 
-        $product->getColor();
-        $product->getCount();
-        $product->getType();
-        $order->makeSmeta($product);
-        $Log->logTransaction('Order make smeta');
-
-        $order->delivery($amount);
-        $Log->logTransaction('Order delivery');
+            $order->delivery($amount);
+            $Log->logTransaction('Stop delivery');   
+        }catch (Exception $e){
+            $Log->logTransaction('Error delivery: '. $e->getMessage());
+        }
     }
 }
