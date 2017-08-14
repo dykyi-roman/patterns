@@ -22,9 +22,9 @@ class LazyProduct
     
     
     /**
-     * @return string
+     * Object initialization affter call
      *
-     * Property _fullName initialization after call
+     * @return mixed     
      */
     public function getProduct()
     {
@@ -34,10 +34,10 @@ class LazyProduct
         return $this->_product;
     }
 
-    /**
-     * @return string
-     *
+    /**          
      * Property _fullName initialization after call
+     *
+     * @return string
      */
     public function getProductFullName()
     {
