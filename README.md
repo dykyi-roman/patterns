@@ -1,3 +1,6 @@
+![patter types](https://github.com/dykyi-roman/patterns/blob/master/diagram/types.jpg)
+
+
 ### ========= REGISTRY ============
 ```
 Product::set('name', 'First product');
