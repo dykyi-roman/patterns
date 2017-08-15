@@ -1,4 +1,8 @@
-### ======= COMMAND ==========
+# COMMAND
+
+### Diagram
+![patter types](https://github.com/dykyi-roman/patterns/blob/master/diagram/command.png)
+### Example
 ```
 // or use factory pattern
 $product  = new Product();

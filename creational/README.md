@@ -1,4 +1,6 @@
-### ======= OBJECT POOL ==========
+# OBJECT POOL
+
+### Example
 ```
 Factory::pushProduct(new Product(100));
 Factory::pushProduct(new Product(200));
@@ -6,7 +8,12 @@ Factory::pushProduct(new Product(200));
 // Factory::getProduct(100)->getId(); = 100
 // Factory::getProduct(200)->getId(); = 200
 ```
-### ======= SINGLETON ==========
+# SINGLETON
+
+### Diagram
+![patter types](https://github.com/dykyi-roman/patterns/blob/master/diagram/singleton.png)
+
+### Example
 ```
 $product_1 = Product::getInstance();
 $product_2 = Product::getInstance();
@@ -17,7 +24,12 @@ $product_2->data = 200;
 // $product_1->data = 200
 // $product_2->data = 200
 ```
-### ======= FACTORY ==========
+# FACTORY
+
+### Diagram
+![patter types](https://github.com/dykyi-roman/patterns/blob/master/diagram/factoryMethod.png)
+
+### Example
 ```
 $factory = new FactoryA();
 $product = $factory->getProduct();
@@ -27,13 +39,20 @@ $factory = new FactoryB();
 $product = $factory->getProduct();
 print_r($product->getName()); // The product B
 ```
-### ======= ABSTRACT FACTORY ==========
+# ABSTRACT FACTORY
+
+### Example
 ```
 $factory = new Factory();
 $product = $factory->create('A');
 $product->write(['data']); // call method from class A
 ```
-### ======= BUILDER ==========
+# BUILDER
+
+### Diagram
+![patter types](https://github.com/dykyi-roman/patterns/blob/master/diagram/builder.png)
+
+### Example
 ```
 $builder = new Builder();
 $productA = new ProductA();
@@ -43,7 +62,12 @@ $builder->setBuilderProduct($productA);
 $builder->constructProduct();
 $real = $builder->getProduct();
 ```
-### ======= PROTOTYPE ==========
+# PROTOTYPE
+
+### Diagram
+![patter types](https://github.com/dykyi-roman/patterns/blob/master/diagram/prototype.png)
+
+### Example
 ```
 $Prototype = new ProductA();
 $NewProduct = new ProductA($Prototype);
