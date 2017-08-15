@@ -1,14 +1,14 @@
 
-### Basic pattern list
+# Basic pattern list
 
 ![patter types](https://github.com/dykyi-roman/patterns/blob/master/diagram/types.jpg)
 
-### Patterns type
+# Patterns type
 
-# Behavioral
+### Behavioral
 
-# Creational
+### Creational
 
-# Structural
+### Structural
 
 
