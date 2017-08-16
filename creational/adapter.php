@@ -46,5 +46,3 @@ class Factory
         return $this->_product->getName($id);
     }
 }
-$factory = new Factory(new Product_2());
-$factory->getName();
