@@ -91,7 +91,6 @@ $product->getName();
 ![pattern](https://github.com/dykyi-roman/patterns/blob/master/diagram/bridge.png)
 ### Example
 ```
-<?php
 $products[] = new FoodProduct('bannan', new DeliveryApi_1());
 $products[] = new FoodProduct('apple', new DeliveryApi_2());
 foreach($products as $product){
