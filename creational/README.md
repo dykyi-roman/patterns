@@ -85,7 +85,12 @@ $product->send("Kiev", "Odesa"); // Inside, will be creneate object for send
 ```
 $product = new ProductAdapter(new Product_2());
 $product->getName();
-
-$product = new ProductAdapter(new Product_1());
+```
+# BRIDGE
+### Diagram
+![pattern](https://github.com/dykyi-roman/patterns/blob/master/diagram/bridge.png)
+### Example
+```
+$product = new Products(new Product_1());
 $product->getName();
 ```
