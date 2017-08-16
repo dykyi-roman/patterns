@@ -76,5 +76,17 @@ $NewProduct = new ProductA($Prototype);
 ### Example
 ```
 $product = new DelegateProduct();
-$product->send("Kiev", "Odesa");
+$product->send("Kiev", "Odesa"); // Inside, will be creneate object for send
+```
+# BRIDGE
+### Diagram
+![patter types](https://github.com/dykyi-roman/patterns/blob/master/diagram/bridge.png)
+### Example
+```
+$factory = new Factory(new Product_2());
+$factory->getName();
+
+$factory = new Factory(new Product_1());
+$factory->getName();
+
 ```
