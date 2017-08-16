@@ -11,7 +11,7 @@ Factory::pushProduct(new Product(200));
 # SINGLETON
 
 ### Diagram
-![patter types](https://github.com/dykyi-roman/patterns/blob/master/diagram/singleton.png)
+![pattern](https://github.com/dykyi-roman/patterns/blob/master/diagram/singleton.png)
 
 ### Example
 ```
@@ -27,7 +27,7 @@ $product_2->data = 200;
 # FACTORY
 
 ### Diagram
-![patter types](https://github.com/dykyi-roman/patterns/blob/master/diagram/factoryMethod.png)
+![pattern](https://github.com/dykyi-roman/patterns/blob/master/diagram/factoryMethod.png)
 
 ### Example
 ```
@@ -50,7 +50,7 @@ $product->write(['data']); // call method from class A
 # BUILDER
 
 ### Diagram
-![patter types](https://github.com/dykyi-roman/patterns/blob/master/diagram/builder.png)
+![pattern](https://github.com/dykyi-roman/patterns/blob/master/diagram/builder.png)
 ### Example
 ```
 $builder = new Builder();
@@ -64,7 +64,7 @@ $real = $builder->getProduct();
 # PROTOTYPE
 
 ### Diagram
-![patter types](https://github.com/dykyi-roman/patterns/blob/master/diagram/prototype.png)
+![pattern](https://github.com/dykyi-roman/patterns/blob/master/diagram/prototype.png)
 ### Example
 ```
 $Prototype = new ProductA();
@@ -72,7 +72,7 @@ $NewProduct = new ProductA($Prototype);
 ```
 # DELEGATE
 ### Diagram
-![patter types](https://github.com/dykyi-roman/patterns/blob/master/diagram/delegate.png)
+![pattern](https://github.com/dykyi-roman/patterns/blob/master/diagram/delegate.png)
 ### Example
 ```
 $product = new DelegateProduct();
@@ -80,7 +80,7 @@ $product->send("Kiev", "Odesa"); // Inside, will be creneate object for send
 ```
 # ADAPTER
 ### Diagram
-![patter types](https://github.com/dykyi-roman/patterns/blob/master/diagram/adapter.png)
+![pattern](https://github.com/dykyi-roman/patterns/blob/master/diagram/adapter.png)
 ### Example
 ```
 $product = new ProductAdapter(new Product_2());
@@ -88,5 +88,4 @@ $product->getName();
 
 $product = new ProductAdapter(new Product_1());
 $product->getName();
-
 ```
