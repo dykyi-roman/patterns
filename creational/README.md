@@ -73,6 +73,7 @@ $NewProduct = new ProductA($Prototype);
 # DELEGATE
 ### Diagram
 ![patter types](https://github.com/dykyi-roman/patterns/blob/master/diagram/delegate.png)
+### Example
 ```
 $product = new DelegateProduct();
 $product->send("Kiev", "Odesa");
