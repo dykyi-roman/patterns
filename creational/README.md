@@ -94,6 +94,6 @@ $product->getName();
 $products[] = new FoodProduct('bannan', new DeliveryApi_1());
 $products[] = new FoodProduct('apple', new DeliveryApi_2());
 foreach($products as $product){
-    $product->getName();
+    $product->delivery("Kiev", "Odesa");
 }
 ```
