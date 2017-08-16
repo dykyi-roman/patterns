@@ -51,7 +51,6 @@ $product->write(['data']); // call method from class A
 
 ### Diagram
 ![patter types](https://github.com/dykyi-roman/patterns/blob/master/diagram/builder.png)
-
 ### Example
 ```
 $builder = new Builder();
@@ -66,9 +65,15 @@ $real = $builder->getProduct();
 
 ### Diagram
 ![patter types](https://github.com/dykyi-roman/patterns/blob/master/diagram/prototype.png)
-
 ### Example
 ```
 $Prototype = new ProductA();
 $NewProduct = new ProductA($Prototype);
+```
+# DELEGATE
+### Diagram
+![patter types](https://github.com/dykyi-roman/patterns/blob/master/diagram/delegate.png)
+```
+$product = new DelegateProduct();
+$product->send("Kiev", "Odesa");
 ```
