@@ -83,6 +83,9 @@ $product->send("Kiev", "Odesa"); // Inside, will be creneate object for send
 ![pattern](https://github.com/dykyi-roman/patterns/blob/master/diagram/adapter.png)
 ### Example
 ```
+$product = new ProductAdapter(new Product_1());
+$product->getName();
+
 $product = new ProductAdapter(new Product_2());
 $product->getName();
 ```
