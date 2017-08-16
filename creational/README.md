@@ -91,6 +91,9 @@ $product->getName();
 ![pattern](https://github.com/dykyi-roman/patterns/blob/master/diagram/bridge.png)
 ### Example
 ```
-$product = new Products(new Product_1());
-$product->getName();
+$products[] = new Products(new Product_1());
+$products[] = new Products(new Product_2());
+foreach($products as $product){
+    $product->getName();
+}
 ```
