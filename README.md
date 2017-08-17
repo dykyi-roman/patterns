@@ -7,6 +7,7 @@
 
 ### Behavioral
 * [Command](https://github.com/dykyi-roman/patterns/blob/master/behavioral/command.php)
+* [Observer](https://github.com/dykyi-roman/patterns/blob/master/behavioral/observer.php)
 ### Creational
 * [Singelton](https://github.com/dykyi-roman/patterns/blob/master/creational/singelton.php)
 * [Pool Object](https://github.com/dykyi-roman/patterns/blob/master/creational/pool_object.php)
