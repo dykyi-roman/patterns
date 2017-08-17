@@ -17,3 +17,12 @@ $product  = new Product();
 $factory = new ProductCommandFactory();
 $factory->factory($argv[1], $product)->execute();
 ```
+### Observer
+![patterns](https://github.com/dykyi-roman/patterns/blob/master/diagram/observer.png)
+### Example
+```
+$product = new Product();
+$product->attach(new Client());
+$product->attach(new Customer());
+$product->delete(100); // attach class get information about delate product action  
+```
