@@ -28,3 +28,14 @@ $orders = $product->getOrders();
 $products = new FacadeProduct();
 $products->delivery(100, 45); 
 ```
+# DECORATOR
+
+### Diagram
+![pattern](https://github.com/dykyi-roman/patterns/blob/master/diagram/decorator.png)
+### Example
+```
+$decorator = new DecoratorProduct(new Product());
+$decorator->format()
+          ->stripXss()
+          ->breakLongStrings();
+```
