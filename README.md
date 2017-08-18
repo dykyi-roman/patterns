@@ -5,10 +5,10 @@
 
 # Patterns type
 
-### Behavioral
+### [Behavioral](https://github.com/dykyi-roman/patterns/tree/master/behavioral)
 * [Command](https://github.com/dykyi-roman/patterns/blob/master/behavioral/command.php)
 * [Observer](https://github.com/dykyi-roman/patterns/blob/master/behavioral/observer.php)
-### Creational
+### [Creational](https://github.com/dykyi-roman/patterns/tree/master/creational)
 * [Singelton](https://github.com/dykyi-roman/patterns/blob/master/creational/singelton.php)
 * [Pool Object](https://github.com/dykyi-roman/patterns/blob/master/creational/pool_object.php)
 * [Factory](https://github.com/dykyi-roman/patterns/blob/master/creational/factory.php)
@@ -18,7 +18,7 @@
 * [Adapter](https://github.com/dykyi-roman/patterns/blob/master/creational/adapter.php)
 * [Delegate](https://github.com/dykyi-roman/patterns/blob/master/creational/delegate.php)
 * [Prototype](https://github.com/dykyi-roman/patterns/blob/master/creational/prototype.php)
-### Structural
+### [Structural](https://github.com/dykyi-roman/patterns/tree/master/structural)
 * [Registry](https://github.com/dykyi-roman/patterns/blob/master/structural/registry.php)
 * [Facade](https://github.com/dykyi-roman/patterns/blob/master/structural/facade.php)
 * [Proxy(lazy loading)](https://github.com/dykyi-roman/patterns/blob/master/structural/lazy_loading.php)
