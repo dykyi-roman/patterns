@@ -41,7 +41,7 @@ $decorator->format()
 ```
 
 # DAO - Data Access Object 
-
+It looks like a pattern, but DAO use DI container
 ### Diagram
 ![pattern](https://github.com/dykyi-roman/patterns/blob/master/diagram/dao.png)
 ### Example
