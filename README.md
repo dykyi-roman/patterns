@@ -9,6 +9,7 @@
 * [Command](https://github.com/dykyi-roman/patterns/blob/master/behavioral/command.php)
 * [Observer](https://github.com/dykyi-roman/patterns/blob/master/behavioral/observer.php)
 * [Iterator](https://github.com/dykyi-roman/patterns/blob/master/behavioral/iterator.php)
+* [Null Object](https://github.com/dykyi-roman/patterns/blob/master/behavioral/null_object.php)
 ### [Creational](https://github.com/dykyi-roman/patterns/tree/master/creational)
 * [Singelton](https://github.com/dykyi-roman/patterns/blob/master/creational/singelton.php)
 * [Pool Object](https://github.com/dykyi-roman/patterns/blob/master/creational/pool_object.php)
