@@ -10,9 +10,9 @@ $registry = new CommandRegistry();
 $registry->add(new DeliveryCommand());
 $registry->add(new PackageCommand());
 $registry->get($argv[1])->execute();
-
-// or use registry pattern
-
+```
+or use registry pattern
+```
 $product  = new Product();
 $factory = new ProductCommandFactory();
 $factory->factory($argv[1], $product)->execute();
@@ -44,9 +44,9 @@ foreach ($productsTitle as $product) {
   $books[] = $product->getTitle();
 }
  echo "Time: ".(microtime(true) - $start); // 1.2 sec
-
-// Without Iterator
-
+```
+Without Iterator
+```
 $start = microtime(true);
 $productList = [];
 for ($i=1; $i < 10000; $i++) {
