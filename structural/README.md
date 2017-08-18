@@ -39,3 +39,13 @@ $decorator->format()
           ->stripXss()
           ->breakLongStrings();
 ```
+
+# DAO - Data Access Object 
+
+### Diagram
+![pattern](https://github.com/dykyi-roman/patterns/blob/master/diagram/dao.png)
+### Example
+```
+$product = new DaoProduct(DB::getInstance('mySQL'));
+$product->findByName('bannan');
+```
