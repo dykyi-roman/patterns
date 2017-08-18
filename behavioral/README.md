@@ -1,4 +1,4 @@
-# COMMAND
+# Command
 
 ### Diagram
 ![patter types](https://github.com/dykyi-roman/patterns/blob/master/diagram/command.png)
@@ -57,4 +57,16 @@ foreach ($productsTitle as $i => $product) {
   $books[] = $product->getTitle();
 }
  echo "Time: ".(microtime(true) - $start); // 0.6 sec
+```
+# Null Object
+
+### Diagram
+![patterns](https://github.com/dykyi-roman/patterns/blob/master/diagram/null_object.png)
+### Example
+```
+$procuct = new RealProduct();
+$procuct->doSomething();
+
+$procuct = new NullProduct();
+$procuct->doSomething(); // Nothing do it 
 ```
