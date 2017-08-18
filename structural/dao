@@ -63,8 +63,8 @@ class DaoProduct extends DaoDataBaseAbstract
 {
     protected $_tableName = "users";
 
-    public function findByEmail($email)
+    public function findByName($name)
     {
-        return $this->find($email, 'email');
+        return $this->find($name, 'name');
     }
 }
