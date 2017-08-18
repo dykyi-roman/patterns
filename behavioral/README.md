@@ -26,3 +26,31 @@ $product->attach(new Client());
 $product->attach(new Customer());
 $product->delete(100); // attach class get information about delate product action  
 ```
+### Iterator
+![patterns](https://github.com/dykyi-roman/patterns/blob/master/diagram/iterator.png)
+### Example
+```
+$start = microtime(true);
+$productList = new ProductList();
+for ($i=1; $i < 10000; $i++) {
+  $productList->addProduct(new Product($i));
+}
+$productsTitle = [];
+foreach ($productsTitle as $product) {
+  $books[] = $product->getTitle();
+}
+ echo "Time: ".(microtime(true) - $start); // 1.2 sec
+
+// Without Iterator
+
+$start = microtime(true);
+$productList = [];
+for ($i=1; $i < 10000; $i++) {
+  $productList[] = new Product($i);
+}
+$productsTitle = [];
+foreach ($productsTitle as $i => $product) {
+  $books[] = $product->getTitle();
+}
+ echo "Time: ".(microtime(true) - $start); // 0.6 sec
+```
