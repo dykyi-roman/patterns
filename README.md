@@ -24,6 +24,8 @@
 * [Proxy(lazy loading)](https://github.com/dykyi-roman/patterns/blob/master/structural/lazy_loading.php)
 * [Lazy loading with closures](https://github.com/dykyi-roman/patterns/blob/master/structural/lazy_loading_with_closures.php)
 * [Decorator](https://github.com/dykyi-roman/patterns/blob/master/structural/decorator.php)
+* [DAO](https://github.com/dykyi-roman/patterns/blob/master/structural/dao.php)
+
 
 
 
