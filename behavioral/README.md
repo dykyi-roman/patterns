@@ -70,3 +70,21 @@ $procuct->doSomething();
 $procuct = new NullProduct();
 $procuct->doSomething(); // Nothing do it 
 ```
+
+# Chain of Responsibility
+
+### Diagram
+![patterns](https://github.com/dykyi-roman/patterns/blob/master/diagram/chain.png)
+### Example
+```
+$product = new Product();
+echo $product->getTitle(); // not avilible title
+$product->setTitle('Main product title');
+
+$subProduct = new SubProduct($product);
+echo $subProduct->getTitle(); // Main product title
+$product->setTitle('Sub product title'); 
+echo $subProduct->getTitle(); // Sub product title
+
+```
+
