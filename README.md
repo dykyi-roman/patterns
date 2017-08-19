@@ -10,7 +10,7 @@
 * [Observer](https://github.com/dykyi-roman/patterns/blob/master/behavioral/observer.php)
 * [Iterator](https://github.com/dykyi-roman/patterns/blob/master/behavioral/iterator.php)
 * [Null Object](https://github.com/dykyi-roman/patterns/blob/master/behavioral/null_object.php)
-* [Null Object](https://github.com/dykyi-roman/patterns/blob/master/behavioral/chain_of_responsibility.php)
+* [Chain_of_responsibility](https://github.com/dykyi-roman/patterns/blob/master/behavioral/chain_of_responsibility.php)
 
 ### [Creational](https://github.com/dykyi-roman/patterns/tree/master/creational)
 * [Singelton](https://github.com/dykyi-roman/patterns/blob/master/creational/singelton.php)
