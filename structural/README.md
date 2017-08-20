@@ -49,3 +49,14 @@ It looks like a pattern, but DAO use DI container
 $product = new DaoProduct(DB::getInstance('mySQL'));
 $product->findByName('bannan');
 ```
+
+# Data Mapper 
+
+### Diagram
+![pattern](https://github.com/dykyi-roman/patterns/blob/master/diagram/data_mapper.png)
+### Example
+```
+   $storage = new StorageAdapter([1 => ['produtcName' => 'domnikl', 'type' => 'test']]);
+   $productMapper = new ProductMapper($storage);
+   $user = $productMapper->findById(1);
+```
