@@ -31,6 +31,7 @@
 * [Decorator](https://github.com/dykyi-roman/patterns/blob/master/structural/decorator.php)
 * [DAO](https://github.com/dykyi-roman/patterns/blob/master/structural/dao.php)
 * [Data Mapper](https://github.com/dykyi-roman/patterns/blob/master/structural/data_mapper.php)
+* [Composite](https://github.com/dykyi-roman/patterns/blob/master/structural/composite.php)
 
 
 
