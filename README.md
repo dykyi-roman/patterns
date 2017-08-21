@@ -28,6 +28,7 @@
 * [Facade](https://github.com/dykyi-roman/patterns/blob/master/structural/facade.php)
 * [Proxy(lazy loading)](https://github.com/dykyi-roman/patterns/blob/master/structural/lazy_loading.php)
 * [Lazy loading with closures](https://github.com/dykyi-roman/patterns/blob/master/structural/lazy_loading_with_closures.php)
+* [Flyweight](https://github.com/dykyi-roman/patterns/blob/master/structural/flyweight.php)
 * [Decorator](https://github.com/dykyi-roman/patterns/blob/master/structural/decorator.php)
 * [DAO](https://github.com/dykyi-roman/patterns/blob/master/structural/dao.php)
 * [Data Mapper](https://github.com/dykyi-roman/patterns/blob/master/structural/data_mapper.php)
