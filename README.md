@@ -1,10 +1,6 @@
 
 # Basic pattern list
 
-![patter types](https://github.com/dykyi-roman/patterns/blob/master/diagram/types.jpg)
-
-# Patterns type
-
 ### [Behavioral](https://github.com/dykyi-roman/patterns/tree/master/behavioral)
 * [Command](https://github.com/dykyi-roman/patterns/blob/master/behavioral/command.php)
 * [Observer](https://github.com/dykyi-roman/patterns/blob/master/behavioral/observer.php)
