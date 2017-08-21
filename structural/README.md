@@ -60,3 +60,21 @@ $product->findByName('bannan');
    $productMapper = new ProductMapper($storage);
    $user = $productMapper->findById(1);
 ```
+
+# Composite
+
+### Diagram
+![pattern](https://github.com/dykyi-roman/patterns/blob/master/diagram/composite.png)
+### Example
+```
+$product = new Product();
+$product->addElement(new ProductElement());
+$product->addElement(new ProductElement());
+
+$subProduct = new Product();
+$subProduct->addElement(new SubProductElement('detail_1'));
+$subProduct->addElement(new SubProductElement('detail_2'));
+
+$product->addElement($subProduct);
+$product->render();  // <div>Render product elements .... <div>detail_1 detail_2</div></div>
+```
