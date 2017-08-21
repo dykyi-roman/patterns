@@ -78,3 +78,18 @@ $subProduct->addElement(new SubProductElement('detail_2'));
 $product->addElement($subProduct);
 $product->render();  // <div>Render product elements .... <div>detail_1 detail_2</div></div>
 ```
+
+# Flyweight
+
+### Diagram
+![pattern](https://github.com/dykyi-roman/patterns/blob/master/diagram/flyweight.png)
+### Example
+```
+$products = ['poduct_1' => 243, 'poduct_2' => 12, 'poduct_3' => 100];
+    $factory = new FlyweightFactory();
+    foreach ($this->products as $product => $count) {
+        $flyweight = $factory->get($product);
+        $rendered = $flyweight->render($count);
+    }
+```
+
