@@ -30,6 +30,5 @@
 * [Data Mapper](https://github.com/dykyi-roman/patterns/blob/master/structural/data_mapper.php)
 * [Composite](https://github.com/dykyi-roman/patterns/blob/master/structural/composite.php)
 
-
-
-
+## Author
+[Dykyi Roman](https://www.linkedin.com/in/roman-dykyi-43428543/), e-mail: [mr.dukuy@gmail.com](mailto:mr.dukuy@gmail.com)
